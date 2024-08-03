@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Friendship Day!</h1>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome, Chandana friya 🐷🐷! alias Pandi Priyaaaa 😂</h2>
+            <p style="color:purple">Here's a special gift for you to celebrate our friendship.</p>
+        </section>
+        
+        <section id="friendship-start">
+            <h2>Our Friendship Started</h2>
+            <div id="friendship-timer">
+                <div><span id="f-days"></span> Days</div>
+                <div><span id="f-hours"></span> Hours</div>
+                <div><span id="f-minutes"></span> Minutes</div>
+                <div><span id="f-seconds"></span> Seconds</div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Memories</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Memory 1" onclick="openLightbox(); currentSlide(1)">
+                <img src="image2.jpg" alt="Memory 2" onclick="openLightbox(); currentSlide(2)">
+                <img src="image3.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(3)">
+                <img src="image4.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(4)">
+                <img src="image5.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(5)">
+                <img src="image6.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(6)">
+                <img src="message.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(7)">
+                <img src="message2.jpg" alt="Memory 3" onclick="openLightbox(); currentSlide(8)">
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    <div class="lightbox-slides">
+                        <img src="image1.jpg" alt="Memory 1">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="image2.jpg" alt="Memory 2">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="image3.jpg" alt="Memory 3">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="image4.jpg" alt="Memory 3">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="image5.jpg" alt="Memory 1">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="image6.jpg" alt="Memory 1">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="message.jpg" alt="Memory 1">
+                    </div>
+                    <div class="lightbox-slides">
+                        <img src="message2.jpg" alt="Memory 1">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="messages">
+            <h2 style="color: purple;">Message For youu</h2>
+            <p style="color:black; font-family: 'Open Sans', sans-serif;">Dear pandii , thank you for always being there for me... 🥰🤩
+            Mana friendship enduku intha strong anedi ardam kaadu apudapudu 😇, entha godava padda kaani
+                malli matladukuntam , nen entha irritate chesina kaani nv malli ade feel tho natho matladtav
+                nannu baristunav 😂, evaru leni time lo nuv parichayam ayyav chaala close ayyav heart ki 
+                you share everything with me 🥺🥺, kaani naake apudapudu leni poni doubts ostuntayi, inka appudapudu 
+                possessiveness ekkuva ga chuyista, i am really sorry daa for that, naaku bayam nv ekkada dooram avatv ani 
+                ala em jaragadu ani nen anukuntuna, i will change and ekkuva possessiveness chuyinchi ninnu ibandi petanu..
+                manam parichayam ayyi two years ki ekkuva aindi that too in online 😇😇, still we are best frnds and we talk daily
+                nitho okaroju morning nundi night varaku matladakapote that day feels incomplete to me and edo okati anali
+                ala aitene naaku prashanthata🤣🤣😁...
+                this is one the best memorable thing, nannu chaala support chestav, entha tittina em anavu, ardam cheskuntav kaani konni 
+                vishayalo ardam cheskovu 😂😂 hope u will try to understand me.... 
+                I hope and believes that our friendship will last forever and ever 🫂🫂🤗🤗
+                I will support you and I will be always there for you , no matter what the situation is..
+                just remember you have your bestfriend for you.. 🐷🐷, this is promise from me
+                inka em chepalo teliyatle ra 😂 iga aapestunaa
+            </p>
+            <p style="color: purple;font-size: 24px;"><b>Happy Friendship Day!</b></p>
+            <p style="color: black">To Chanduuuuu from Raghunadhhh</p>
+        </section>
+        <section id="quotes">
+            <h2 style=" color:purple
+            ">Friendship Quotes</h2>
+            <p style="color: #242333;">A friend is someone who knows all about you and still loves you."</p>
+            <p style="color: #242333;">Friendship is born at that moment when one person says to another, 'What! You too? I thought I was the only one.'"</p>
+            <p style="color: #242333;">True friendship comes when the silence between two people is comfortable." </p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Friendship Day</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

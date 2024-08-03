@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: purple;
+    color: white ;
+    text-align: center;
+    padding: 1em 0;
+    animation: fadeIn 2s;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: black;
+    padding: 10px;
+}
+
+#gallery {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery img {
+    width: 50%;
+    max-width: 300px;
+    margin: 10px;
+    height: 350px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.lightbox-slides {
+    display: none;
+}
+
+.lightbox img {
+    width: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+ #friendship-start {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#friendship-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#friendship-timer div {
+    background-color: purple;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+#friendship-timer span {
+    font-size: 2em;
+    display: block;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    #timer, #friendship-timer {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
